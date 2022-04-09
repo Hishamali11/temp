@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import TodoList from './components/TodoList'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import DataGridDemo from './components/data'
+import LeftButtonGroup from './components/leftButtonGroup'
+import Footer from './components/footer'
+import Temp from'./components/temp'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ height: '90vh', width: '100%' ,backgroundColor:'#283d4a'}}>
+      <TodoList/>
+      <LeftButtonGroup/>
+      <DataGridDemo/>
+      <Footer/>
+      
     </div>
   );
 }
